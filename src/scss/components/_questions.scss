@@ -1,0 +1,137 @@
+.questions {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--accent-color);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 507px;
+      height: 476px;
+      background-image: url('../../img/bg-arrows.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      position: absolute;
+      left: -60px;
+      bottom: -55px;
+    }
+  }
+
+  &__left {
+    margin-right: 15px;
+  }
+
+  &__title {
+    color: var(--white-color);
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    color: var(--white-color);
+    line-height: 1.6;
+  }
+
+  &__form {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  &__block {
+    display: flex;
+    margin-bottom: 16px;
+
+    label {
+      flex-grow: 1;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+  }
+
+  &__label-name {
+    color: var(--white-color);
+    opacity: 0.6;
+    font-size: 16px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+
+  &__textarea {
+    resize: none;
+    margin-bottom: 16px;
+    height: 116px;
+  }
+
+  &__label {
+    &--name {
+      margin-bottom: 16px;
+      display: block;
+    }
+  }
+
+  &__textarea,
+  &__input {
+    border: none;
+    display: block;
+    background-color: var(--white-color);
+    padding: 16px 24px;
+    width: 100%;
+
+    &::placeholder {
+      font-size: 20px;
+      opacity: 0.6;
+      color: var(--black-color);
+    }
+  }
+
+  &__input {
+    height: 58px;
+  }
+
+  &__button {
+    color: var(--white-color);
+    padding: 13px 24px;
+    display: inline-block;
+    font-family: 'OswaldMedium';
+    text-transform: uppercase;
+    text-align: center;
+    height: 48px;
+    border: 1px solid var(--white-color);
+    transition:
+      background-color ease 0.3s,
+      color ease 0.3s;
+
+    &:hover {
+      color: var(--accent-color);
+      background-color: var(--white-color);
+    }
+  }
+
+  &__approval {
+    margin-bottom: 32px;
+    display: flex;
+  }
+
+  &__text {
+    line-height: 1.1;
+    font-size: 16px;
+  }
+
+  &__text-link {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  &__checkbox {
+    display: inline-block;
+    margin-right: 8px;
+  }
+}

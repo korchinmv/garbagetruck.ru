@@ -1,0 +1,22 @@
+.news {
+  background-color: var(--bg-grey-color);
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.about {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 646px;
+    height: 596px;
+    background-image: url('../../img/bg-arrows.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: 0px;
+    bottom: -45px;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  &__left {
+    max-width: 640px;
+    margin-right: 32px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-family: 'NeverMindMedium';
+    font-size: 18px;
+    opacity: 0.6;
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    max-width: 450px;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+
+  &__details {
+    width: fit-content;
+  }
+
+  &__img {
+    width: 636px;
+    height: 440px;
+  }
+
+  &__achievements {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__achievements-item {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  &__achievements-top {
+    display: block;
+    line-height: 1.2;
+    font-family: 'OswaldMedium';
+    font-size: 64px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+}

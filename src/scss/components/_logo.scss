@@ -1,0 +1,21 @@
+.logo {
+  display: block;
+  width: fit-content;
+
+  &--right-line {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 45px;
+      width: 2px;
+      position: absolute;
+      right: -13px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: var(--black-light-color);
+      opacity: 0.2;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.header {
+  &__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 30px 0;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    column-gap: 64px;
+  }
+
+  &__logo {
+    margin-right: 40px;
+  }
+
+  &__partners {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__partners-text {
+    color: var(--black-light-color);
+    font-size: 16px;
+    font-family: 'NeverMindMedium';
+    opacity: 0.7;
+    margin-bottom: 2px;
+  }
+
+  &__partners-list {
+    display: flex;
+  }
+
+  &__partners-item:not(:last-of-type) {
+    margin-right: 20px;
+  }
+
+  &__write-us,
+  &__call {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link,
+  &__btn-trigger {
+    font-family: 'OswaldSemiBold';
+    text-transform: uppercase;
+    padding: 2px;
+  }
+
+  &__link {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+
+  &__btn-trigger {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    color: var(--accent-color);
+    font-size: 16px;
+    text-decoration: underline;
+    position: relative;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+
+  &__nav {
+    background-color: var(--green-light-color);
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__service {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-family: 'OswaldSemiBold';
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 32px;
+    transition: background-color ease 0.3s;
+
+    &:hover {
+      background-color: var(--green-dark-color);
+    }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    transition: background-color ease 0.3s;
+
+    &:hover {
+      background-color: var(--green-dark-color);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.catalog {
+  padding-bottom: 90px;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 32px;
+    row-gap: 63px;
+  }
+
+  &__link {
+    display: block;
+    padding: 1px;
+  }
+
+  &__details {
+    width: fit-content;
+  }
+}

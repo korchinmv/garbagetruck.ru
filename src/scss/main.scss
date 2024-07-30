@@ -1,0 +1,25 @@
+// базовые подключения
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'settings';
+
+// подключения компонентов страницы
+@import './components/header';
+@import './components/logo';
+@import './components/menu';
+@import './components/hero';
+@import './components/details';
+@import './components/slider-controls';
+@import './components/catalog';
+@import './components/catalog-product';
+@import './components/about';
+@import './components/technic';
+@import './components/technic-card';
+@import './components/services';
+@import './components/manufacturers';
+@import './components/news';
+@import './components/news-card';
+@import './components/clients';
+@import './components/questions';
+@import './components/custom-checkbox';

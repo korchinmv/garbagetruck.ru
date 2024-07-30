@@ -1,0 +1,45 @@
+.news-card {
+  &__img {
+    margin-bottom: 16px;
+  }
+
+  &__date {
+    display: block;
+    color: var(--accent-color);
+    font-size: 16px;
+    font-family: 'OswaldSemiBold';
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    line-height: 1.2;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-family: 'OswaldMedium';
+  }
+
+  &__text {
+    opacity: 0.6;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    padding: 13px 32px;
+    display: inline-block;
+    font-family: 'OswaldMedium';
+    text-transform: uppercase;
+    text-align: center;
+    height: 48px;
+    border: 1px solid var(--accent-color);
+    transition:
+      background-color ease 0.3s,
+      color ease 0.3s;
+
+    &:hover {
+      color: var(--white-color);
+      background-color: var(--green-dark-color);
+    }
+  }
+}

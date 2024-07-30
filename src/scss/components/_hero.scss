@@ -1,0 +1,55 @@
+.hero {
+  padding: 0;
+  background-color: var(--bg-grey-color);
+  position: relative;
+  height: 536px;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 1200px;
+    height: 1100px;
+    background-image: url('../../img/bg-arrows.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: -430px;
+    top: -370px;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__content {
+    padding: 55px 0 64px 0;
+    margin-right: 30px;
+  }
+
+  &__title {
+    font-family: 'OswaldBold';
+    font-size: 48px;
+    text-transform: uppercase;
+    max-width: 640px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+
+    &--green {
+      color: var(--accent-color);
+    }
+  }
+
+  &__descr {
+    font-size: 20px;
+    max-width: 560px;
+    opacity: 0.6;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    position: relative;
+    right: -140px;
+  }
+}
