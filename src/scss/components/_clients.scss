@@ -12,9 +12,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    padding-bottom: 80px;
 
+    padding-bottom: 80px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+
+  &__slider {
     &::after {
       content: '';
       display: block;
@@ -23,12 +31,6 @@
       width: 100%;
       position: absolute;
       bottom: 0;
-    }
-  }
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: 32px;
     }
   }
 }
