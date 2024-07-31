@@ -54,25 +54,26 @@
     <div class="container">
       <div class="header__nav-wrapper">
         <ul class="menu">
-          <li class="menu__item"><a class="menu__link menu__link--catalog" href="#">
-              <img class="menu__link-img" src="img/baseline-menu.svg" alt="Меню">
-              Каталог техники</a>
-            <!-- <ul> список выпадающего меню по нажатию/наведению мыши
-            <li></li>
-          </ul> -->
+          <li class="menu__item">
+            <a class="menu__link menu__link--catalog" href="#">
+              <div class="hamburger-lines">
+                <span class="hamburger-lines__line line1"></span>
+                <span class="hamburger-lines__line line2"></span>
+                <span class="hamburger-lines__line line3"></span>
+              </div>
+
+              Каталог техники
+            </a>
+
           </li>
-          <li class="menu__item"><a class="menu__link menu__link--services" href="#">Услуги</a>
-            <!-- <ul> список выпадающего меню по нажатию/наведению мыши
-          <li></li>
-        </ul> -->
-          </li>
+          <li class="menu__item"><a class="menu__link menu__link--services" href="#">Услуги</a></li>
           <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Партнеры</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
         </ul>
 
-        <button class="header__search header-search">
+        <button class="header__search-btn">
           <svg width="24" height="24" fill="none">
             <path
               d="M17 17L21 21M3 11C3 13.1217 3.84285 15.1566 5.34315 16.6569C6.84344 18.1571 8.87827 19 11 19C13.1217 19 15.1566 18.1571 16.6569 16.6569C18.1571 15.1566 19 13.1217 19 11C19 8.87827 18.1571 6.84344 16.6569 5.34315C15.1566 3.84285 13.1217 3 11 3C8.87827 3 6.84344 3.84285 5.34315 5.34315C3.84285 6.84344 3 8.87827 3 11Z"
@@ -87,5 +88,196 @@
     </div>
   </nav>
 
+  <div class="header-search">
+    <div class="header-search__wrapper">
+      <div class="container">
 
+        <form class="search-form header__search-form" action="#">
+          <svg width="24" height="24" fill="none">
+            <path
+              d="M17 17L21 21M3 11C3 13.1217 3.84285 15.1566 5.34315 16.6569C6.84344 18.1571 8.87827 19 11 19C13.1217 19 15.1566 18.1571 16.6569 16.6569C18.1571 15.1566 19 13.1217 19 11C19 8.87827 18.1571 6.84344 16.6569 5.34315C15.1566 3.84285 13.1217 3 11 3C8.87827 3 6.84344 3.84285 5.34315 5.34315C3.84285 6.84344 3 8.87827 3 11Z"
+              stroke="#3A3A3A" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+          </svg>
+
+          <input class="search-form__input" name="search-input" type="text" placeholder="Поиск по сайту" required>
+
+          <button class="search-form__btn" aria-label="Кнопка поиска на сайте">
+            Найти
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="header-catalog">
+    <div class="header-catalog__wrapper">
+      <div class="container">
+
+        <ul class="header-catalog__list">
+          <li class="header-catalog__item">
+            <article class="catalog__product catalog-product catalog-product">
+              <a class="catalog-product__link catalog-product__link--menu" href="#">
+                <div class="catalog-product__img catalog-product__img--menu">
+                  <picture>
+                    <source srcset="img/catalog-car.webp" type="image/webp" />
+                    <img class="catalog-product__pic" src="img/catalog-car.png" alt="Фото машины" decoding="async" />
+                  </picture>
+                </div>
+
+                <div class="catalog-product__content">
+                  <h3 class="catalog-product__title">Мусоровозы</h3>
+
+                  <span class="catalog-product__models">9 моделей</span>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="header-catalog__item">
+            <article class="catalog__product catalog-product catalog-product">
+              <a class="catalog-product__link catalog-product__link--menu" href="#">
+                <div class="catalog-product__img catalog-product__img--menu">
+                  <picture>
+                    <source srcset="img/catalog-car.webp" type="image/webp" />
+                    <img class="catalog-product__pic" src="img/catalog-car.png" alt="Фото машины" decoding="async" />
+                  </picture>
+                </div>
+
+                <div class="catalog-product__content">
+                  <h3 class="catalog-product__title">Мусоровозы</h3>
+
+                  <span class="catalog-product__models">9 моделей</span>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="header-catalog__item">
+            <article class="catalog__product catalog-product catalog-product">
+              <a class="catalog-product__link catalog-product__link--menu" href="#">
+                <div class="catalog-product__img catalog-product__img--menu">
+                  <picture>
+                    <source srcset="img/catalog-car.webp" type="image/webp" />
+                    <img class="catalog-product__pic" src="img/catalog-car.png" alt="Фото машины" decoding="async" />
+                  </picture>
+                </div>
+
+                <div class="catalog-product__content">
+                  <h3 class="catalog-product__title">Мусоровозы</h3>
+
+                  <span class="catalog-product__models">9 моделей</span>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="header-catalog__item">
+            <article class="catalog__product catalog-product catalog-product">
+              <a class="catalog-product__link catalog-product__link--menu" href="#">
+                <div class="catalog-product__img catalog-product__img--menu">
+                  <picture>
+                    <source srcset="img/catalog-car.webp" type="image/webp" />
+                    <img class="catalog-product__pic" src="img/catalog-car.png" alt="Фото машины" decoding="async" />
+                  </picture>
+                </div>
+
+                <div class="catalog-product__content">
+                  <h3 class="catalog-product__title">Мусоровозы</h3>
+
+                  <span class="catalog-product__models">9 моделей</span>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="header-catalog__item">
+            <article class="catalog__product catalog-product catalog-product">
+              <a class="catalog-product__link catalog-product__link--menu" href="#">
+                <div class="catalog-product__img catalog-product__img--menu">
+                  <picture>
+                    <source srcset="img/catalog-car.webp" type="image/webp" />
+                    <img class="catalog-product__pic" src="img/catalog-car.png" alt="Фото машины" decoding="async" />
+                  </picture>
+                </div>
+
+                <div class="catalog-product__content">
+                  <h3 class="catalog-product__title">Мусоровозы</h3>
+
+                  <span class="catalog-product__models">9 моделей</span>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="header-catalog__item">
+            <article class="catalog__product catalog-product catalog-product">
+              <a class="catalog-product__link catalog-product__link--menu" href="#">
+                <div class="catalog-product__img catalog-product__img--menu">
+                  <picture>
+                    <source srcset="img/catalog-car.webp" type="image/webp" />
+                    <img class="catalog-product__pic" src="img/catalog-car.png" alt="Фото машины" decoding="async" />
+                  </picture>
+                </div>
+
+                <div class="catalog-product__content">
+                  <h3 class="catalog-product__title">Мусоровозы</h3>
+
+                  <span class="catalog-product__models">9 моделей</span>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="header-catalog__item">
+            <article class="catalog__product catalog-product catalog-product">
+              <a class="catalog-product__link catalog-product__link--menu" href="#">
+                <div class="catalog-product__img catalog-product__img--menu">
+                  <picture>
+                    <source srcset="img/catalog-car.webp" type="image/webp" />
+                    <img class="catalog-product__pic" src="img/catalog-car.png" alt="Фото машины" decoding="async" />
+                  </picture>
+                </div>
+
+                <div class="catalog-product__content">
+                  <h3 class="catalog-product__title">Мусоровозы</h3>
+
+                  <span class="catalog-product__models">9 моделей</span>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="header-catalog__item">
+            <article class="catalog__product catalog-product catalog-product">
+              <a class="catalog-product__link catalog-product__link--menu" href="#">
+                <div class="catalog-product__img catalog-product__img--menu">
+                  <picture>
+                    <source srcset="img/catalog-car.webp" type="image/webp" />
+                    <img class="catalog-product__pic" src="img/catalog-car.png" alt="Фото машины" decoding="async" />
+                  </picture>
+                </div>
+
+                <div class="catalog-product__content">
+                  <h3 class="catalog-product__title">Мусоровозы</h3>
+
+                  <span class="catalog-product__models">9 моделей</span>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="header-catalog__item header-catalog__item--link">
+            <a class="header-catalog__link details state" href="#">Перейти в каталог
+              <svg class="details__svg" width="21" height="18" viewBox="0 0 21 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 9H20M20 9L12.0833 1.5M20 9L12.0833 16.5" stroke="white" stroke-width="2"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>

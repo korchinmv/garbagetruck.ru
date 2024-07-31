@@ -7,11 +7,12 @@
         <p class="questions__text">Оставьте заявку и наши специалисты свяжутся с вами</p>
       </div>
 
-      <form class="questions__form" id="form" action="#">
+      <form class="questions__form" id="questions-form" name="questions-form" action="#">
         <label class="questions__label questions__label--name" for="name">
           <span class="questions__label-name">Имя*</span>
 
-          <input class="questions__input" type="text" name="name" id="name" placeholder="Как к вам обращаться">
+          <input class="questions__input input-name" autocomplete="off" type="text" name="name" id="name"
+            placeholder="Как к вам обращаться" data-validate-field="name">
         </label>
 
 
@@ -19,27 +20,29 @@
           <label class="questions__label" for="phone">
             <span class="questions__label-name">Телефон*</span>
 
-            <input class="questions__input input-tel" type="tel" name="phone" id="phone" placeholder="">
+            <input class="questions__input input-tel" type="tel" name="phone" id="phone" data-validate-field="phone">
           </label>
 
           <label class="questions__label" for="mail">
             <span class="questions__label-name">Email*</span>
 
-            <input class="questions__input input-mail" type="email" name="mail" id="mail" placeholder="Ваша почта">
+            <input class="questions__input input-mail" autocomplete="off" type="email" name="mail" id="mail"
+              placeholder="Ваша почта" data-validate-field="mail">
           </label>
         </div>
 
 
-        <label class="questions__label" for="textarea">
+        <label class="questions__label questions__label--textarea" for="textarea">
           <span class="questions__label-name">Комментарий</span>
 
-          <textarea class="questions__textarea" name="textarea" id="textarea"
-            placeholder="Напишите ваш вопрос"></textarea>
+          <textarea class="questions__textarea input-textarea" name="textarea" id="textarea"
+            placeholder="Напишите ваш вопрос" data-validate-field="textarea"></textarea>
         </label>
 
         <div class="questions__approval">
-          <label class="questions__checkbox custom-checkbox">
-            <input class="custom-checkbox__input visually-hidden" type="checkbox">
+          <label class="questions__label questions__label--checkbox custom-checkbox">
+            <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+              data-validate-field="checkbox">
             <span class="custom-checkbox__span"></span>
           </label>
 

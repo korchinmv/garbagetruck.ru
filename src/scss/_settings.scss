@@ -17,6 +17,10 @@
   min-width: 360px;
   min-height: 100%;
   font-size: 18px;
+
+  &--no-scroll {
+    overflow-y: hidden;
+  }
 }
 
 img {

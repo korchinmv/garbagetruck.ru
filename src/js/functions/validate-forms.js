@@ -5,9 +5,8 @@ export const validateForms = (selector, rules, checkboxes = [], afterSend) => {
   const form = document?.querySelector(".questions__form");
   const telSelector = form?.querySelector('input[type="tel"]');
 
-  console.log("123");
   if (!form) {
-    console.error("Нет такого селектора!");
+    console.error("Нет формы!");
     return false;
   }
 
@@ -17,7 +16,11 @@ export const validateForms = (selector, rules, checkboxes = [], afterSend) => {
   }
 
   if (telSelector) {
-    const inputMask = new Inputmask("+7 (___) ___-__-__");
+    const inputMask = new Inputmask("+7 (___) ___-__-__", {
+      placeholder: "+7 (___) ___-__-__",
+      clearIncomplete: false,
+    });
+
     inputMask.mask(telSelector);
 
     for (let item of rules) {

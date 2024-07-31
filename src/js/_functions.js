@@ -1,64 +1,5 @@
 // Данный файл - лишь собрание подключений готовых компонентов.
 // Рекомендуется создавать отдельный файл в папке components и подключать все там
-// import { validateForms } from "./functions/validate-forms";
-// const rules = [
-//   {
-//     ruleSelector: ".input-name",
-//     rules: [
-//       {
-//         rule: "minLength",
-//         value: 3,
-//       },
-//       {
-//         rule: "required",
-//         value: true,
-//         errorMessage: "Заполните имя!",
-//       },
-//     ],
-//   },
-//   {
-//     ruleSelector: ".input-tel",
-//     tel: true,
-//     telError: "Введите корректный телефон",
-//     rules: [
-//       {
-//         rule: "required",
-//         value: true,
-//         errorMessage: "Заполните телефон!",
-//       },
-//     ],
-//   },
-//   {
-//     ruleSelector: ".input-mail",
-//     mail: true,
-//     mailError: "Введите корректный телефон",
-//     rules: [
-//       {
-//         rule: "required",
-//         value: true,
-//         errorMessage: "Напишите свою почту!",
-//       },
-//     ],
-//   },
-//   {
-//     ruleSelector: ".input-textarea",
-//     mail: true,
-//     mailError: "Введите корректный телефон",
-//     rules: [
-//       {
-//         rule: "required",
-//         value: true,
-//         errorMessage: "Напишите свою почту!",
-//       },
-//     ],
-//   },
-// ];
-
-// const afterForm = () => {
-//   console.log("Произошла отправка, тут можно писать любые действия");
-// };
-
-// validateForms(".questions__form", rules, afterForm);
 
 // Определение операционной системы на мобильных
 // import { mobileCheck } from "./functions/mobile-check.js";
@@ -81,12 +22,6 @@
 
 // Реализация бургер-меню
 // import { burger } from './functions/burger';
-
-// Реализация остановки скролла (не забудьте вызвать функцию)
-// import { disableScroll } from './functions/disable-scroll';
-
-// Реализация включения скролла (не забудьте вызвать функцию)
-// import { enableScroll } from './functions/enable-scroll';
 
 // Реализация модального окна
 // import GraphModal from 'graph-modal';

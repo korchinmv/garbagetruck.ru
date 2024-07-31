@@ -28,6 +28,19 @@
     &--catalog {
       padding: 0 33px 0 33px;
       background-color: var(--accent-color);
+
+      &__active {
+        background-color: var(--green-dark-color);
+      }
+    }
+
+    &--services,
+    &--catalog {
+      transition: background-color ease 0.3s;
+
+      &:hover {
+        background-color: var(--green-dark-color);
+      }
     }
 
     &--services {
@@ -43,13 +56,8 @@
         background-position: center;
         margin-left: 6px;
       }
-    }
 
-    &--services,
-    &--catalog {
-      transition: background-color ease 0.3s;
-
-      &:hover {
+      &__active {
         background-color: var(--green-dark-color);
       }
     }

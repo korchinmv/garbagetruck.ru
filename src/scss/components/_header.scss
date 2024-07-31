@@ -1,4 +1,16 @@
 .header {
+  position: relative;
+
+  &__top {
+    background-color: var(--white-color);
+  }
+
+  &__top,
+  &__nav {
+    position: relative;
+    z-index: 3;
+  }
+
   &__top-wrapper {
     display: flex;
     justify-content: space-between;
@@ -95,14 +107,20 @@
     }
   }
 
-  &__search {
+  &__search-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
     transition: background-color ease 0.3s;
+    max-width: 72px;
+    margin-right: auto;
 
     &:hover {
+      background-color: var(--green-dark-color);
+    }
+
+    &--active {
       background-color: var(--green-dark-color);
     }
   }

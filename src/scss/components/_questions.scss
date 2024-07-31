@@ -66,14 +66,23 @@
 
   &__textarea {
     resize: none;
-    margin-bottom: 16px;
     height: 116px;
   }
 
   &__label {
-    &--name {
+    .just-validate-error-label {
+      margin-top: 8px;
+    }
+
+    &--name,
+    &--textarea {
       margin-bottom: 16px;
       display: block;
+    }
+
+    &--checkbox {
+      display: inline-block;
+      margin-right: 8px;
     }
   }
 
@@ -84,6 +93,7 @@
     background-color: var(--white-color);
     padding: 16px 24px;
     width: 100%;
+    opacity: 1;
 
     &::placeholder {
       font-size: 20px;
@@ -130,8 +140,8 @@
     text-underline-offset: 3px;
   }
 
-  &__checkbox {
-    display: inline-block;
-    margin-right: 8px;
+  .just-validate-error-label {
+    font-size: 15px;
+    line-height: 1;
   }
 }
