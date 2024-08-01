@@ -1,0 +1,30 @@
+.popup {
+  &__title,
+  &__text {
+    line-height: 1.4;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-family: 'OswaldBold';
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -11,6 +11,16 @@
     transition: all 0.2s;
   }
 
+  &--green {
+    &.custom-checkbox > input:checked + span::before {
+      background-color: var(--accent-color);
+      background-image: url('../../img/checkbox-white.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
   /* стили для чекбокса, находящегося в состоянии checked */
   & > input:checked + span::before {
     background-color: var(--white-color);

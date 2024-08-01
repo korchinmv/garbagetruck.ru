@@ -1,10 +1,81 @@
-<div class="graph-modal">
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="service-modal">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+<div class="popup graph-modal">
+  <div class="popup__container graph-modal__container" role="dialog" aria-modal="true"
+    data-graph-target="service-modal">
+
     <div class="graph-modal__content">
-      <form action="#">
-        <h1>123</h1>
+
+      <h3 class="popup__title">Оставить заявку</h3>
+
+      <p class="popup__text">Оставьте заявку и наши специалисты свяжутся с вами</p>
+
+      <form class="popup__form service-form form form--popup" action="#" name="service-form">
+        <div class="form__block">
+          <label class="form__label form__label--name" for="name">
+            <span class="form__label-name">Имя*</span>
+
+            <input class="form__input input-name" autocomplete="off" type="text" name="name" id="name"
+              placeholder="Как к вам обращаться" data-validate-field="name">
+          </label>
+
+          <label class="form__label" for="phone">
+            <span class="form__label-name">Телефон*</span>
+
+            <input class="form__input input-tel" type="tel" name="phone" id="phone" data-validate-field="phone">
+          </label>
+        </div>
+
+        <div class="form__block">
+          <label class="form__label" for="mail">
+            <span class="form__label-name">Email*</span>
+
+            <input class="form__input input-mail" autocomplete="off" type="email" name="mail" id="mail"
+              placeholder="Ваша почта" data-validate-field="mail">
+          </label>
+
+          <label class="form__label" for="mail">
+            <span class="form__label-name">Вид услуги*</span>
+
+            <select class="form__select">
+              <option class="form__select-option" value="0">Выберите услугу</option>
+              <option class="form__select-option" value="1">Поставка техники</option>
+              <option class="form__select-option" value="2">Сервисное обслуживание</option>
+              <option class="form__select-option" value="3">Запчасти</option>
+              <option class="form__select-option" value="4">Лизинг</option>
+              <option class="form__select-option" value="5">Trade-in</option>
+              <option class="form__select-option" value="6">Ремонт</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="form__label form__label--textarea" for="textarea">
+          <span class="form__label-name">Комментарий</span>
+
+          <textarea class="form__textarea input-textarea" name="textarea" id="textarea"
+            placeholder="Напишите ваш вопрос" data-validate-field="textarea"></textarea>
+        </label>
+
+        <div class="form__approval">
+          <label class="form__label form__label--checkbox custom-checkbox custom-checkbox--green">
+            <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+              data-validate-field="checkbox">
+            <span class="custom-checkbox__span"></span>
+          </label>
+
+          <p class="form__text">Я даю согласие на обработку персональных данных
+            и соглашаюсь с <a class="form__text-link" href="#">политикой конфиденциальности</a>
+          </p>
+        </div>
+
+        <button class="form__button details">Отправить</button>
       </form>
     </div>
+
+    <button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
+      <div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
+        <span class="hamburger-lines__line line1"></span>
+        <span class="hamburger-lines__line line2"></span>
+        <span class="hamburger-lines__line line3"></span>
+      </div>
+    </button>
   </div>
-</div>"
+</div>

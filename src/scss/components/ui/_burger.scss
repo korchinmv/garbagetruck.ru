@@ -7,6 +7,45 @@
   justify-content: center;
   margin-right: 11px;
 
+  &--dark {
+    height: 24px;
+    width: 24px;
+    margin-right: 0;
+
+    &:hover {
+      .hamburger-lines__line {
+        background-color: var(--accent-color);
+        transition: background-color ease 0.3s;
+      }
+    }
+
+    .hamburger-lines__line {
+      background-color: var(--black-light-color);
+    }
+
+    .hamburger-lines__line.line1 {
+      transform-origin: 39% -80%;
+    }
+
+    .hamburger-lines__line.line3 {
+      transform-origin: 0% 0%;
+    }
+  }
+
+  &--active {
+    .line1 {
+      transform: rotate(45deg);
+    }
+
+    .line2 {
+      transform: scaleY(0);
+    }
+
+    .line3 {
+      transform: rotate(-45deg);
+    }
+  }
+
   &__line {
     display: block;
     height: 2px;
@@ -30,19 +69,5 @@
   .line3 {
     transform-origin: 0% 100%;
     transition: transform 0.2s ease-in-out;
-  }
-
-  &--active {
-    .line1 {
-      transform: rotate(45deg);
-    }
-
-    .line2 {
-      transform: scaleY(0);
-    }
-
-    .line3 {
-      transform: rotate(-45deg);
-    }
   }
 }
