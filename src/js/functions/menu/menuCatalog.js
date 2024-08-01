@@ -1,8 +1,14 @@
-const buttonCatalog = document?.querySelector(".menu__link--catalog");
-const burger = document?.querySelector(".hamburger-lines");
-const menuCatalog = document?.querySelector(".header-catalog");
-const body = document?.querySelector(".page__body");
-const overlay = document?.querySelector(".overlay");
+import {
+  buttonCatalog,
+  buttonServices,
+  buttonSearch,
+  menuCatalog,
+  menuServices,
+  menuSearch,
+  burger,
+  body,
+  overlay,
+} from "../../_vars.js";
 
 buttonCatalog.addEventListener("click", () => {
   buttonCatalog.classList.toggle("menu__link--catalog__active");
@@ -12,6 +18,16 @@ buttonCatalog.addEventListener("click", () => {
     menuCatalog.classList.add("header-catalog--visible");
     overlay.classList.add("overlay--visible");
     body.classList.add("page__body--no-scroll");
+
+    if (menuSearch.classList.contains("header-search--visible")) {
+      menuSearch.classList.remove("header-search--visible");
+      buttonSearch.classList.remove("header__search-btn--active");
+    }
+
+    if (menuServices.classList.contains("header-services--visible")) {
+      menuServices.classList.remove("header-services--visible");
+      buttonServices.classList.remove("menu__link--services__active");
+    }
   } else {
     menuCatalog.classList.remove("header-catalog--visible");
     body.classList.remove("page__body--no-scroll");

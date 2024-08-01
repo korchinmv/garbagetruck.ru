@@ -6,26 +6,31 @@
 
 // подключения компонентов страницы
 @import './components/header';
-@import './components/header-search';
-@import './components/header-catalog';
-@import './components/search-form';
-@import './components/logo';
-@import './components/menu';
-@import './components/hero';
-@import './components/details';
-@import './components/slider-controls';
-@import './components/catalog';
-@import './components/catalog-product';
-@import './components/about';
-@import './components/technic';
-@import './components/technic-card';
-@import './components/services';
-@import './components/manufacturers';
-@import './components/news';
-@import './components/news-card';
-@import './components/clients';
-@import './components/questions';
-@import './components/custom-checkbox';
 @import './components/footer';
-@import './components/overlay';
-@import './components/burger';
+
+@import './components/menu/menu';
+@import './components/menu/header-search';
+@import './components/menu/header-catalog';
+@import './components/menu/header-services';
+
+@import './components/sections/about';
+@import './components/sections/hero';
+@import './components/sections/technic';
+@import './components/sections/catalog';
+@import './components/sections/services';
+@import './components/sections/news';
+@import './components/sections/clients';
+@import './components/sections/questions';
+@import './components/sections/manufacturers';
+
+@import './components/ui/logo';
+@import './components/ui/burger';
+@import './components/ui/overlay';
+@import './components/ui/details';
+@import './components/ui/search-form';
+@import './components/ui/slider-controls';
+@import './components/ui/custom-checkbox';
+
+@import './components/cards/news-card';
+@import './components/cards/technic-card';
+@import './components/cards/catalog-product';
