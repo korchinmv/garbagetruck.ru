@@ -55,10 +55,15 @@
         background-repeat: no-repeat;
         background-position: center;
         margin-left: 6px;
+        transition: transform ease 0.2s;
       }
 
       &__active {
         background-color: var(--green-dark-color);
+
+        &::after {
+          transform: rotate(180deg);
+        }
       }
     }
   }
