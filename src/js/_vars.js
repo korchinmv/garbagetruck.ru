@@ -7,6 +7,9 @@ const buttonServices = document?.querySelector(".menu__link--services");
 const menuSearch = document?.querySelector(".header-search");
 const menuCatalog = document?.querySelector(".header-catalog");
 const menuServices = document?.querySelector(".header-services");
+const mobileMenu = document?.querySelector(".mobile-menu");
+const burgerButton = document?.querySelector(".hamburger-lines--mobile-menu");
+const dropdown = document?.querySelectorAll(".dropdown");
 
 export {
   menuSearch,
@@ -15,7 +18,10 @@ export {
   buttonSearch,
   buttonCatalog,
   buttonServices,
+  mobileMenu,
+  burgerButton,
   overlay,
   burger,
   body,
+  dropdown,
 };

@@ -19,6 +19,10 @@
       background-position: center;
       background-size: contain;
     }
+
+    .custom-checkbox__span::before {
+      border-color: var(--accent-color);
+    }
   }
 
   /* стили для чекбокса, находящегося в состоянии checked */

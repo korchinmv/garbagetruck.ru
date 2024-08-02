@@ -25,9 +25,17 @@
     height: 100%;
     padding: 0 16px;
 
+    @media screen and (max-width: 1104px) {
+      font-size: 19px;
+    }
+
     &--catalog {
       padding: 0 33px 0 33px;
       background-color: var(--accent-color);
+
+      @media screen and (max-width: 1104px) {
+        padding: 0 16px;
+      }
 
       &__active {
         background-color: var(--green-dark-color);
@@ -45,6 +53,10 @@
 
     &--services {
       padding: 0 16px 0 41px;
+
+      @media screen and (max-width: 1104px) {
+        padding-left: 16px;
+      }
 
       &::after {
         content: '';

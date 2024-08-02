@@ -68,3 +68,5 @@ const afterForm = () => {
 };
 
 validateForms("#questions-form", rules, afterForm);
+
+validateForms("#service-form", rules, afterForm);

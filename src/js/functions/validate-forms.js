@@ -2,11 +2,11 @@ import JustValidate from "just-validate";
 import Inputmask from "../../../node_modules/inputmask/dist/inputmask.es6.js";
 
 export const validateForms = (selector, rules, checkboxes = [], afterSend) => {
-  const form = document?.querySelector(".questions__form");
+  const form = document?.querySelector(selector);
   const telSelector = form?.querySelector('input[type="tel"]');
 
   if (!form) {
-    console.error("Нет формы!");
+    console.error(`Форма с селектором ${selector} не найдена на странице`);
     return false;
   }
 
@@ -18,7 +18,7 @@ export const validateForms = (selector, rules, checkboxes = [], afterSend) => {
   if (telSelector) {
     const inputMask = new Inputmask("+7 (___) ___-__-__", {
       placeholder: "+7 (___) ___-__-__",
-      clearIncomplete: false,
+      clearMaskOnLostFocus: false,
     });
 
     inputMask.mask(telSelector);

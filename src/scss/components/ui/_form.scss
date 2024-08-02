@@ -75,16 +75,22 @@
   &__textarea,
   &__input,
   &__select {
-    border: none;
+    border: 2px solid transparent;
     display: block;
     background-color: var(--white-color);
     padding: 16px 24px;
     width: 100%;
+    outline: transparent;
+    transition: border-color ease-in-out 0.2s;
 
     &::placeholder {
       font-size: 20px;
       opacity: 0.6;
       color: var(--black-color);
+    }
+
+    &:focus {
+      border-color: var(--green-dark-color);
     }
   }
 

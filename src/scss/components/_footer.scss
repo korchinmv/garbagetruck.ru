@@ -1,4 +1,6 @@
 .footer {
+  margin-top: auto;
+
   &__top {
     background-color: var(--black-color);
     padding: 40px 0;
@@ -104,20 +106,6 @@
   }
 
   &__socials {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 16px;
     margin-top: 80px;
-  }
-
-  &__socials-link {
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-
-    &:hover {
-      opacity: 0.6;
-    }
   }
 }

@@ -27,9 +27,6 @@
 // import GraphTabs from 'graph-tabs';
 // const tabs = new GraphTabs('tab');
 
-// Получение высоты шапки сайта (не забудьте вызвать функцию)
-// import { getHeaderHeight } from './functions/header-height';
-
 // Подключение плагина кастом-скролла
 // import 'simplebar';
 

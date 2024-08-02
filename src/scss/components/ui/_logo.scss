@@ -1,6 +1,19 @@
 .logo {
   display: block;
-  width: fit-content;
+  width: 247px;
+  height: 46px;
+
+  @media screen and (max-width: 1104px) {
+    width: 219px;
+    height: 34px;
+  }
+
+  &__img {
+    @media screen and (max-width: 1104px) {
+      width: 219px;
+      height: 34px;
+    }
+  }
 
   &--right-line {
     position: relative;

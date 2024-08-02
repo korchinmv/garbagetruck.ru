@@ -24,15 +24,19 @@
 @import './components/sections/manufacturers';
 
 @import './components/ui/logo';
-@import './components/ui/burger';
+@import './components/ui/hamburger-lines';
 @import './components/ui/overlay';
 @import './components/ui/details';
 @import './components/ui/search-form';
 @import './components/ui/slider-controls';
 @import './components/ui/custom-checkbox';
 @import './components/ui/custom-select';
+@import './components/ui/mobileMenu';
 @import './components/ui/popup';
 @import './components/ui/form';
+
+@import './components/elements/socials';
+@import './components/elements/feedback-block';
 
 @import './components/cards/news-card';
 @import './components/cards/technic-card';

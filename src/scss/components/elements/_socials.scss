@@ -1,0 +1,21 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 16px;
+
+  &__link {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__img {
+    width: 32px;
+    height: 32px;
+  }
+}
