@@ -1,10 +1,13 @@
 .hero {
-  padding: 0;
+  padding: 60px 0;
   background-color: var(--bg-grey-color);
   position: relative;
-  height: 536px;
   overflow: hidden;
   z-index: 1;
+
+  @media screen and (max-width: 991px) {
+    padding: 40px 0 32px 0;
+  }
 
   &::before {
     content: '';
@@ -18,15 +21,50 @@
     position: absolute;
     right: -430px;
     top: -370px;
+
+    @media screen and (max-width: 1200px) {
+      width: 900px;
+      height: 900px;
+      right: -150px;
+      right: -230px;
+      top: -170px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__wrapper {
     display: flex;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 1270px) {
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 991px) {
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
   }
 
   &__content {
-    padding: 55px 0 64px 0;
     margin-right: 30px;
+
+    @media screen and (max-width: 991px) {
+      margin-right: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-right: 0;
+    }
   }
 
   &__title {
@@ -36,6 +74,20 @@
     max-width: 640px;
     line-height: 1.2;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 1270px) {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 991px) {
+      font-size: 34px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 30px;
+      margin-bottom: 16px;
+    }
 
     &--green {
       color: var(--accent-color);
@@ -47,10 +99,39 @@
     max-width: 560px;
     opacity: 0.6;
     margin-bottom: 40px;
+
+    @media screen and (max-width: 1270px) {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+    }
   }
 
   &__img {
     position: relative;
     right: -140px;
+
+    @media screen and (max-width: 1500px) {
+      position: static;
+      right: 0;
+    }
+
+    @media screen and (max-width: 1270px) {
+      width: 100%;
+    }
+  }
+
+  .swiper-slide {
+    overflow: hidden;
+  }
+
+  &__slider-controls-wrapper {
+    @media screen and (max-width: 991px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 }

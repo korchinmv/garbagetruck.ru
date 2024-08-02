@@ -29,7 +29,6 @@ const rules = [
   },
   {
     ruleSelector: ".input-mail",
-
     mailError: "Введите корректно адресс почты",
     rules: [
       {
@@ -41,12 +40,10 @@ const rules = [
   },
   {
     ruleSelector: ".input-textarea",
-
     mailError: "Введите корректное сообщение",
     rules: [
       {
         rule: "required",
-
         errorMessage: "Напишите сообщение!",
       },
     ],
@@ -58,6 +55,15 @@ const rules = [
       {
         rule: "required",
         errorMessage: "Нужно согласиться с условиями",
+      },
+    ],
+  },
+  {
+    ruleSelector: ".form__custom-select",
+    rules: [
+      {
+        rule: "required",
+        errorMessage: "Выбирете одну из услуг",
       },
     ],
   },

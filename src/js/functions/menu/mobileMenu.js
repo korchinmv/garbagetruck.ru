@@ -19,9 +19,11 @@ if (dropdownArray) {
         if (!dropdownMenu.classList.contains("show")) {
           dropdownMenu.classList.add("show");
           dropdownMenu.classList.remove("hide");
+          button.classList.add("mobile-menu__text--active");
         } else {
           dropdownMenu.classList.remove("show");
           dropdownMenu.classList.add("hide");
+          button.classList.remove("mobile-menu__text--active");
         }
       });
     }
@@ -32,6 +34,14 @@ if (burgerButton) {
   burgerButton.addEventListener("click", () => {
     mobileMenu.classList.toggle("mobile-menu--active");
     burgerButton.classList.toggle("hamburger-lines--active");
+
+    if (mobileMenu.classList.contains("mobile-menu--active")) {
+      overlay.classList.add("overlay--visible");
+      body.classList.add("page__body--no-scroll");
+    } else {
+      overlay.classList.remove("overlay--visible");
+      body.classList.remove("page__body--no-scroll");
+    }
   });
 }
 

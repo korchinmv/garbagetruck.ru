@@ -8,6 +8,8 @@ import {
   overlay,
   burger,
   body,
+  mobileMenu,
+  burgerButton,
 } from "../_vars.js";
 
 overlay.addEventListener("click", () => {
@@ -21,5 +23,9 @@ overlay.addEventListener("click", () => {
     burger.classList.remove("hamburger-lines--active");
     overlay.classList.remove("overlay--visible");
     body.classList.remove("page__body--no-scroll");
+
+    //Скрываем моб. меню по клику на оверлей
+    mobileMenu.classList.remove("mobile-menu--active");
+    burgerButton.classList.remove("hamburger-lines--active");
   }
 });
