@@ -7,6 +7,14 @@
     position: relative;
     overflow: hidden;
 
+    @media screen and (max-width: 990px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 48px 16px;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -19,20 +27,79 @@
       position: absolute;
       left: -60px;
       bottom: -55px;
+      z-index: 0;
+
+      @media screen and (max-width: 576px) {
+        display: none;
+      }
     }
   }
 
   &__left {
     margin-right: 15px;
+
+    @media screen and (max-width: 990px) {
+      margin: 0 0 40px 0;
+    }
   }
 
   &__title {
     color: var(--white-color);
     margin-bottom: 16px;
+
+    @media screen and (max-width: 990px) {
+      margin-bottom: 8px;
+    }
   }
 
   &__text {
     color: var(--white-color);
     line-height: 1.6;
+
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+      line-height: 1.4;
+      opacity: 0.6;
+    }
+  }
+
+  &__form {
+    max-width: 600px;
+    width: 100%;
+    z-index: 1;
+
+    @media screen and (max-width: 990px) {
+      max-width: 100%;
+      font-size: 18px;
+    }
+
+    .form__block {
+      @media screen and (max-width: 576px) {
+        flex-direction: column;
+
+        .form__label {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .form__input,
+    .form__textarea {
+      @media screen and (max-width: 576px) {
+        padding: 11px 16px;
+      }
+    }
+
+    .form__textarea {
+      @media screen and (max-width: 576px) {
+        height: 96px;
+      }
+    }
+
+    .form__button {
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
+    }
   }
 }

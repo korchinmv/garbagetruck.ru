@@ -6,6 +6,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 48px;
+
+    @media screen and (max-width: 576px) {
+      margin-bottom: 32px;
+    }
   }
 
   &__list {
@@ -15,8 +19,42 @@
   }
 
   &__item {
+    &.swiper-slide {
+      flex-shrink: 1;
+
+      @media screen and (max-width: 768px) {
+        flex-shrink: 0;
+      }
+    }
+
     &:not(:last-child) {
       margin-right: 32px;
+
+      @media screen and (max-width: 1024px) {
+        margin-right: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__details {
+    &.details {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__slider-controls {
+    &.slider-controls {
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: inline-block;
+      }
     }
   }
 }

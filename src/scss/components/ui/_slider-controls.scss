@@ -1,7 +1,6 @@
 .slider-controls {
   display: flex;
   align-items: center;
-  width: fit-content;
 
   &__prev-img {
     transform: rotate(180deg);
@@ -34,6 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 110px !important;
 
     .swiper-pagination-bullets {
       transform: translateX(0) !important;
