@@ -1,0 +1,33 @@
+.quantity-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__name,
+  &__num {
+    opacity: 0.6;
+  }
+
+  &__name {
+    margin-right: 8px;
+  }
+
+  &__num {
+    font-family: 'NeverMindRegular';
+    color: var(--black-color);
+    transition: color ease 0.3s;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  &__num--active {
+    font-family: 'NeverMindDemiBold';
+    opacity: 1;
+  }
+}

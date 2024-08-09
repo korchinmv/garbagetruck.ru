@@ -1,10 +1,10 @@
 .search-form {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   border: 1px solid var(--grey-light-color);
   padding: 17px 24px;
-  position: relative;
   height: 58px;
   transition: border-color ease 0.3s;
 
@@ -13,30 +13,30 @@
   }
 
   svg {
-    opacity: 0.6;
     margin-right: 24px;
+    opacity: 0.6;
   }
 
   &__input {
-    width: 100%;
-    border: none;
     outline: transparent;
-    line-height: 1;
+    border: none;
+    width: 100%;
     font-size: 20px;
+    line-height: 1;
   }
 
   &__btn {
-    padding: 17px 24px;
-    text-transform: uppercase;
-    color: var(--white-color);
-    background-color: var(--accent-color);
     position: absolute;
     right: -1px;
     top: -1px;
-    transition: background-color ease 0.3s;
-    font-size: 20px;
+    padding: 17px 24px;
     font-family: 'OswaldSemiBold';
+    font-size: 20px;
     line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    transition: background-color ease 0.3s;
 
     &:hover {
       background-color: var(--green-dark-color);

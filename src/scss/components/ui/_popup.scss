@@ -5,9 +5,9 @@
   }
 
   &__title {
-    font-size: 40px;
-    font-family: 'OswaldBold';
     margin-bottom: 16px;
+    font-family: 'OswaldBold';
+    font-size: 40px;
     text-transform: uppercase;
   }
 
@@ -19,12 +19,12 @@
     position: absolute;
     right: 22px;
     top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     padding: 0;
     width: 24px;
     height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }

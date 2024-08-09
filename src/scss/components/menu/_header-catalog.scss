@@ -1,29 +1,28 @@
 .header-catalog {
-  background-color: var(--white-color);
-  padding: 40px 0 58px 0;
   position: absolute;
   left: 0;
-  transform: translateY(-300%);
-  width: 100%;
-  visibility: none;
-  opacity: 0;
   z-index: 3;
+  padding: 40px 0 58px;
+  width: 100%;
+  background-color: var(--white-color);
+  opacity: 0;
+  visibility: none;
+  visibility: visible;
+  transform: translateY(-300%);
   transition:
     opacity 0.4s,
     visibility 0.4s ease-in-out;
-  visibility: visible;
 
   &--visible {
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
     transform: translateY(0);
   }
 
   &__list {
     display: grid;
+    gap: 24px 32px;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 32px;
-    row-gap: 24px;
     width: 100%;
   }
 
@@ -34,7 +33,7 @@
   }
 
   &__link {
-    width: fit-content;
     margin-top: auto;
+    width: fit-content;
   }
 }

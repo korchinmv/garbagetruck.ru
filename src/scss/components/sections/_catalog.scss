@@ -1,38 +1,36 @@
 .catalog {
   padding-bottom: 90px;
 
-  @media screen and (max-width: 576px) {
+  @media screen and (width <= 576px) {
     padding-bottom: 32px;
   }
 
   &__head {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 48px;
 
-    @media screen and (max-width: 576px) {
+    @media screen and (width <= 576px) {
       margin-bottom: 32px;
     }
   }
 
   &__list {
     display: grid;
+    gap: 63px 32px;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 32px;
-    row-gap: 63px;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (width <= 1200px) {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    @media screen and (max-width: 850px) {
+    @media screen and (width <= 850px) {
+      gap: 24px 16px;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 16px;
-      row-gap: 24px;
     }
 
-    @media screen and (max-width: 576px) {
+    @media screen and (width <= 576px) {
       margin-bottom: 32px;
     }
   }
@@ -46,7 +44,7 @@
       }
 
       &.details {
-        @media screen and (max-width: 576px) {
+        @media screen and (width <= 576px) {
           display: block !important;
           width: 100%;
           text-align: center;
@@ -55,7 +53,7 @@
     }
 
     &.details {
-      @media screen and (max-width: 576px) {
+      @media screen and (width <= 576px) {
         display: none;
       }
     }

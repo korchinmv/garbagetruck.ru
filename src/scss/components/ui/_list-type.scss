@@ -1,0 +1,37 @@
+.list-type {
+  display: flex;
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    svg {
+      rect {
+        transition: all ease 0.3s;
+      }
+    }
+
+    &:hover {
+      svg {
+        rect {
+          fill: var(--accent-color);
+          fill-opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__btn--active {
+    svg {
+      rect {
+        fill: var(--accent-color);
+        fill-opacity: 1;
+      }
+    }
+  }
+}

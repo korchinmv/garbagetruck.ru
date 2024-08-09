@@ -1,0 +1,26 @@
+.breadcrumbs {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    color: var(--black-light-color);
+    opacity: 0.7;
+    position: relative;
+
+    &:not(:last-child) {
+      padding-right: 14px;
+      margin-right: 8px;
+
+      &:after {
+        content: '/';
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    &--active {
+      opacity: 1;
+    }
+  }
+}

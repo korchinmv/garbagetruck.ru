@@ -22,8 +22,8 @@
     &:hover {
       svg {
         path {
-          transition: all ease 0.3s;
           stroke: #93b947;
+          transition: all ease 0.3s;
         }
       }
     }
@@ -40,10 +40,10 @@
     }
 
     .swiper-pagination-bullet {
+      width: 2px;
+      height: 12px;
       background-color: var(--black-color);
       opacity: 0.6;
-      height: 12px;
-      width: 2px;
 
       &:not(:last-child) {
         margin-right: 14px;
@@ -51,11 +51,12 @@
     }
 
     .swiper-pagination-bullet-active-main {
-      background-color: var(--accent-color);
       height: 20px;
+      background-color: var(--accent-color);
     }
   }
 }
+
 .slider-controls__pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
   transform: translateX(0) !important;
 }

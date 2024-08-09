@@ -3,21 +3,21 @@
   &__span::before {
     content: '';
     display: inline-block;
+    border: 1px solid var(--white-color);
     width: 20px;
     height: 20px;
     background-color: transparent;
-    border: 1px solid var(--white-color);
-    cursor: pointer;
     transition: all 0.2s;
+    cursor: pointer;
   }
 
   &--green {
     &.custom-checkbox > input:checked + span::before {
-      background-color: var(--accent-color);
-      background-image: url('../../img/checkbox-white.svg');
-      background-repeat: no-repeat;
+      background-image: url('../img/checkbox-white.svg');
       background-position: center;
       background-size: contain;
+      background-repeat: no-repeat;
+      background-color: var(--accent-color);
     }
 
     .custom-checkbox__span::before {
@@ -27,22 +27,22 @@
 
   /* стили для чекбокса, находящегося в состоянии checked */
   & > input:checked + span::before {
-    background-color: var(--white-color);
-    background-image: url('../../img/checkbox.svg');
-    background-repeat: no-repeat;
+    background-image: url('../img/checkbox.svg');
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--white-color);
   }
 
   /* стили при наведении курсора на checkbox */
-  & > input:not(:disabled):not(:checked) + span:hover::before {
+  & > input:not(:disabled, :checked) + span:hover::before {
     border-color: var(--green-dark-color);
   }
 
   /* стили для активного чекбокса (при нажатии на него) */
   & > input:not(:disabled):active + span::before {
-    background-color: var(--green-dark-color);
     border-color: #b3d7ff;
+    background-color: var(--green-dark-color);
   }
 
   /* стили для чекбокса, находящегося в фокусе */

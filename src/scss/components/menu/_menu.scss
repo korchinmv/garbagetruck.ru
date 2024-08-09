@@ -1,11 +1,11 @@
 .menu {
-  color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: flex-start;
   font-family: 'OswaldSemiBold';
   font-size: 20px;
   text-transform: uppercase;
+  color: var(--white-color);
 
   &__item {
     display: flex;
@@ -22,18 +22,18 @@
   &__link {
     display: flex;
     align-items: center;
-    height: 100%;
     padding: 0 16px;
+    height: 100%;
 
-    @media screen and (max-width: 1104px) {
+    @media screen and (width <= 1104px) {
       font-size: 19px;
     }
 
     &--catalog {
-      padding: 0 33px 0 33px;
+      padding: 0 33px;
       background-color: var(--accent-color);
 
-      @media screen and (max-width: 1104px) {
+      @media screen and (width <= 1104px) {
         padding: 0 16px;
       }
 
@@ -54,19 +54,19 @@
     &--services {
       padding: 0 16px 0 41px;
 
-      @media screen and (max-width: 1104px) {
+      @media screen and (width <= 1104px) {
         padding-left: 16px;
       }
 
       &::after {
         content: '';
         display: block;
+        margin-left: 6px;
         width: 10px;
         height: 10px;
         background-image: url('../../img/svg/menu-drop-icon.svg');
-        background-repeat: no-repeat;
         background-position: center;
-        margin-left: 6px;
+        background-repeat: no-repeat;
         transition: transform ease 0.2s;
       }
 

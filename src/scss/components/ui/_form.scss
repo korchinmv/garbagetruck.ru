@@ -38,18 +38,18 @@
   }
 
   &__label-name {
-    color: var(--white-color);
-    opacity: 0.6;
+    display: inline-block;
+    margin-bottom: 4px;
     font-size: 16px;
     line-height: 1.6;
     text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 4px;
+    color: var(--white-color);
+    opacity: 0.6;
   }
 
   &__textarea {
-    resize: none;
     height: 116px;
+    resize: none;
   }
 
   &__label {
@@ -59,8 +59,8 @@
 
     &--name,
     &--textarea {
-      margin-bottom: 16px;
       display: block;
+      margin-bottom: 16px;
     }
 
     &--checkbox {
@@ -72,18 +72,18 @@
   &__textarea,
   &__input,
   &__select {
-    border: 2px solid transparent;
     display: block;
-    background-color: var(--white-color);
+    outline: transparent;
+    border: 2px solid transparent;
     padding: 16px 24px;
     width: 100%;
-    outline: transparent;
+    background-color: var(--white-color);
     transition: border-color ease-in-out 0.2s;
 
     &::placeholder {
       font-size: 20px;
-      opacity: 0.6;
       color: var(--black-color);
+      opacity: 0.6;
     }
 
     &:focus {
@@ -97,19 +97,19 @@
   }
 
   &__select-option {
-    opacity: 0.6;
     color: var(--black-color);
+    opacity: 0.6;
   }
 
   &__button {
-    color: var(--white-color);
-    padding: 13px 24px;
     display: inline-block;
-    font-family: 'OswaldMedium';
-    text-transform: uppercase;
-    text-align: center;
-    height: 48px;
     border: 1px solid var(--white-color);
+    padding: 13px 24px;
+    height: 48px;
+    font-family: 'OswaldMedium';
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
     transition:
       background-color ease 0.3s,
       color ease 0.3s;
@@ -121,14 +121,14 @@
   }
 
   &__approval {
-    margin-bottom: 32px;
     display: flex;
+    margin-bottom: 32px;
   }
 
   &__text {
-    color: var(--white-color);
-    line-height: 1.1;
     font-size: 16px;
+    line-height: 1.1;
+    color: var(--white-color);
   }
 
   &__text-link {

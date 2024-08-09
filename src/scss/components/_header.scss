@@ -5,7 +5,7 @@
   &__top {
     background-color: var(--white-color);
 
-    @media screen and (max-width: 1025px) {
+    @media screen and (width <= 1025px) {
       background-color: var(--bg-grey-color);
     }
   }
@@ -19,17 +19,18 @@
   &__top-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 25px 0 30px 0;
+    align-items: center;
+    padding: 25px 0 30px;
 
-    @media screen and (max-width: 1104px) {
+    @media screen and (width <= 1104px) {
       padding: 20px 0;
     }
 
-    @media screen and (max-width: 1025px) {
+    @media screen and (width <= 1025px) {
       padding: 15px 0;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       padding: 7px 0;
     }
   }
@@ -38,7 +39,7 @@
     display: flex;
     align-items: center;
 
-    @media screen and (max-width: 1025px) {
+    @media screen and (width <= 1025px) {
       display: none;
     }
   }
@@ -47,13 +48,13 @@
     display: flex;
     column-gap: 64px;
 
-    @media screen and (max-width: 1025px) {
+    @media screen and (width <= 1025px) {
       column-gap: 41px;
       justify-content: center;
       width: 100%;
     }
 
-    @media screen and (max-width: 991px) {
+    @media screen and (width <= 991px) {
       column-gap: 0;
       justify-content: space-between;
     }
@@ -62,7 +63,7 @@
   &__logo {
     margin-right: 40px;
 
-    @media screen and (max-width: 991px) {
+    @media screen and (width <= 991px) {
       margin-right: 0;
     }
   }
@@ -74,11 +75,11 @@
   }
 
   &__partners-text {
-    color: var(--black-light-color);
-    font-size: 16px;
-    font-family: 'NeverMindMedium';
-    opacity: 0.7;
     margin-bottom: 2px;
+    font-family: 'NeverMindMedium';
+    font-size: 16px;
+    color: var(--black-light-color);
+    opacity: 0.7;
   }
 
   &__partners-list {
@@ -90,7 +91,7 @@
   }
 
   &__write-us {
-    @media screen and (max-width: 576px) {
+    @media screen and (width <= 576px) {
       margin-right: 5px;
     }
   }
@@ -98,7 +99,7 @@
   &__nav {
     background-color: var(--green-light-color);
 
-    @media screen and (max-width: 991px) {
+    @media screen and (width <= 991px) {
       background-color: var(--white-color);
     }
   }
@@ -107,43 +108,43 @@
     display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width: 991px) {
+    @media screen and (width <= 991px) {
       display: none;
     }
   }
 
   &__service {
-    background-color: var(--accent-color);
-    color: var(--white-color);
+    padding: 0 32px;
     font-family: 'OswaldSemiBold';
     font-size: 20px;
     text-transform: uppercase;
-    padding: 0 32px;
+    color: var(--white-color);
+    background-color: var(--accent-color);
     transition: background-color ease 0.3s;
 
     &:hover {
       background-color: var(--green-dark-color);
     }
 
-    @media screen and (max-width: 1104px) {
+    @media screen and (width <= 1104px) {
       padding: 0 16px;
     }
 
-    @media screen and (max-width: 991px) {
+    @media screen and (width <= 991px) {
       display: none;
     }
   }
 
   &__search-btn {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-grow: 1;
     flex-shrink: 0;
-    transition: background-color ease 0.3s;
-    max-width: 72px;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
     margin-right: auto;
+    width: 100%;
+    max-width: 72px;
+    transition: background-color ease 0.3s;
 
     &:hover {
       background-color: var(--green-dark-color);
@@ -153,22 +154,22 @@
       background-color: var(--green-dark-color);
     }
 
-    @media screen and (max-width: 1104px) {
+    @media screen and (width <= 1104px) {
       font-size: 19px;
     }
 
-    @media screen and (max-width: 991px) {
+    @media screen and (width <= 991px) {
       display: none;
     }
   }
 
   &__nav-mobile {
     display: none;
-    padding: 28px 0;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 28px 0;
 
-    @media screen and (max-width: 991px) {
+    @media screen and (width <= 991px) {
       display: flex;
     }
   }

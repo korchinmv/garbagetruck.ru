@@ -13,29 +13,29 @@
 
   &::after {
     content: '';
+    position: absolute;
+    right: 22px;
+    top: 50%;
     display: block;
     width: 16px;
     height: 8px;
     background-image: url('../../../img/arrow-select.svg');
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: absolute;
-    right: 22px;
-    top: 50%;
-    transition: 0.25s all ease;
+    background-repeat: no-repeat;
     transform: translateY(-50%);
+    transition: 0.25s all ease;
   }
 
   //Сбрасываем стили дефолтного селекта
   &__select {
-    cursor: pointer;
     appearance: none;
-    border: 0;
-    outline: 0;
-    background: none;
-    color: inherit;
-    box-shadow: none;
     display: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    color: inherit;
+    background: none;
+    cursor: pointer;
   }
 }

@@ -44,50 +44,50 @@ const technicSwiper = new Swiper(".technic__slider", {
   },
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const width = window.innerWidth;
-
-  if (width > 768) {
-    const servicesSwiper = new Swiper(".services__slider", {
+const servicesSwiper = new Swiper(".services__slider", {
+  enabled: false,
+  slidesPerView: 3,
+  spaceBetween: 32,
+  navigation: {
+    nextEl: ".services__slider-controls-next",
+    prevEl: ".services__slider-controls-prev",
+  },
+  pagination: {
+    el: ".services__pagination",
+    dynamicBullets: true,
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 1200px
+    1200: {
+      enabled: true,
       slidesPerView: 3,
       spaceBetween: 32,
-      navigation: {
-        nextEl: ".services__slider-controls-next",
-        prevEl: ".services__slider-controls-prev",
-      },
-      pagination: {
-        el: ".services__pagination",
-        dynamicBullets: true,
-        clickable: true,
-      },
-      breakpoints: {
-        // when window width is >= 1200px
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 32,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 22,
-        },
-      },
-    });
-  } else if (width < 768) {
-    const newsSwiper = new Swiper(".news__slider", {
+    },
+    1024: {
+      enabled: true,
+      slidesPerView: 4,
+      spaceBetween: 22,
+    },
+  },
+});
+
+const newsSwiper = new Swiper(".news__slider", {
+  enabled: true,
+  spaceBetween: 20,
+  slidesPerView: 1,
+  pagination: {
+    el: ".news__pagination",
+    dynamicBullets: true,
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      enabled: false,
       slidesPerView: 1,
-      pagination: {
-        el: ".news__pagination",
-        dynamicBullets: true,
-        clickable: true,
-      },
-      breakpoints: {
-        // when window width is >= 768px
-        768: {
-          slidesPerView: 1,
-        },
-      },
-    });
-  }
+    },
+  },
 });
 
 const clientsSwiper = new Swiper(".clients__slider", {

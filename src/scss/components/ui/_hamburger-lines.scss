@@ -1,21 +1,21 @@
 .hamburger-lines {
   display: block;
-  height: 15px;
-  width: 15px;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   justify-content: center;
   margin-right: 11px;
-  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
 
   &--mobile-menu {
-    height: 40px;
-    width: 40px;
     margin-right: 0;
+    width: 40px;
+    height: 40px;
 
     .hamburger-lines__line {
-      background-color: var(--accent-color);
       height: 3px;
+      background-color: var(--accent-color);
 
       &:not(:last-child) {
         margin-bottom: 6px;
@@ -32,9 +32,9 @@
   }
 
   &--dark {
-    height: 24px;
-    width: 24px;
     margin-right: 0;
+    width: 24px;
+    height: 24px;
 
     &:hover {
       .hamburger-lines__line {
@@ -72,8 +72,8 @@
 
   &__line {
     display: block;
-    height: 2px;
     width: 100%;
+    height: 2px;
     background-color: var(--white-color);
 
     &:not(:last-child) {

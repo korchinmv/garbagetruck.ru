@@ -1,28 +1,23 @@
-// базовые подключения
 @import 'vars';
 @import 'mixins';
 @import 'fonts';
 @import 'settings';
-
-// подключения компонентов страницы
 @import './components/header';
 @import './components/footer';
-
 @import './components/menu/menu';
 @import './components/menu/header-search';
 @import './components/menu/header-catalog';
 @import './components/menu/header-services';
-
 @import './components/sections/about';
 @import './components/sections/hero';
 @import './components/sections/technic';
 @import './components/sections/catalog';
 @import './components/sections/services';
 @import './components/sections/news';
+@import './components/sections/news-page';
 @import './components/sections/clients';
 @import './components/sections/questions';
 @import './components/sections/manufacturers';
-
 @import './components/ui/logo';
 @import './components/ui/hamburger-lines';
 @import './components/ui/overlay';
@@ -34,10 +29,13 @@
 @import './components/ui/mobileMenu';
 @import './components/ui/popup';
 @import './components/ui/form';
-
+@import './components/ui/quantity-items';
+@import './components/ui/select-date';
+@import './components/ui/list-type';
+@import './components/ui/pagination';
+@import './components/ui/breadcrumbs';
 @import './components/elements/socials';
 @import './components/elements/feedback-block';
-
 @import './components/cards/news-card';
 @import './components/cards/technic-card';
 @import './components/cards/catalog-product';

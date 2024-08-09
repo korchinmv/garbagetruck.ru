@@ -1,11 +1,11 @@
 .details {
-  background-color: var(--accent-color);
-  color: var(--white-color) !important;
   display: flex;
   align-items: center;
+  padding: 13px 24px;
   font-family: 'OswaldMedium';
   text-transform: uppercase;
-  padding: 13px 24px;
+  color: var(--white-color) !important;
+  background-color: var(--accent-color);
   transition: background-color ease 0.3s;
 
   &:hover {
