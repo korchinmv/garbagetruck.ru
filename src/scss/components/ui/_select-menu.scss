@@ -1,0 +1,66 @@
+.select-menu {
+  font-family: 'NeverMindDemiBold';
+  position: relative;
+
+  &--active {
+    svg {
+      transform: rotate(180deg);
+      path {
+        fill: var(--accent-color);
+      }
+    }
+
+    & > .select-menu__options {
+      display: block;
+    }
+  }
+
+  &__btn-wrapper {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color ease 0.2s;
+
+    svg {
+      transition: all ease 0.2s;
+      path {
+        transition: all ease 0.2s;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: var(--accent-color);
+        }
+      }
+    }
+  }
+
+  &__btn {
+    margin-right: 4px;
+  }
+
+  &__options {
+    display: none;
+    background-color: var(--white-color);
+    padding: 16px;
+    position: absolute;
+    margin-top: 8px;
+    left: 0;
+    width: 205px;
+  }
+
+  &__option {
+    cursor: pointer;
+    transition: color ease 0.2s;
+
+    &:hover {
+      color: var(--accent-color);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}

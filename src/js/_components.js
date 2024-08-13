@@ -6,3 +6,5 @@ import "./functions/overlay.js";
 import "./components/slider.js";
 import "./components/form.js";
 import "./components/popup.js";
+import "./components/select-menu.js";
+import "./components/list-type.js";

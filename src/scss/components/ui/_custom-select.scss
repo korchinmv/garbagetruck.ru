@@ -29,6 +29,7 @@
 
   //Сбрасываем стили дефолтного селекта
   &__select {
+    cursor: pointer;
     appearance: none;
     display: none;
     outline: 0;
@@ -36,6 +37,5 @@
     box-shadow: none;
     color: inherit;
     background: none;
-    cursor: pointer;
   }
 }
