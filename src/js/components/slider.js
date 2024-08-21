@@ -86,6 +86,7 @@ const newsSwiper = new Swiper(".news__slider", {
     768: {
       enabled: false,
       slidesPerView: 1,
+      spaceBetween: 0,
     },
   },
 });
@@ -114,5 +115,24 @@ const clientsMobileSwiper = new Swiper(".clients__slider-mobile", {
     el: ".clients__pagination-mobile",
     dynamicBullets: true,
     clickable: true,
+  },
+});
+
+const newsArticleSwiperThumbs = new Swiper(".swiper-news-article-thumbs", {
+  spaceBetween: 8,
+  // loop: true,
+  slidesPerView: 3,
+  // centeredSlides: true,
+  slideToClickedSlide: true,
+});
+
+const newsArticleSwiper = new Swiper(".swiper-news-article", {
+  spaceBetween: 8,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: newsArticleSwiperThumbs,
   },
 });

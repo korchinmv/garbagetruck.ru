@@ -1,0 +1,44 @@
+.blockquote {
+  background-color: var(--bg-grey-color);
+  display: flex;
+  flex-direction: column;
+  padding: 33px 24px 33px 24px;
+  position: relative;
+
+  &::after,
+  &::before {
+    content: '';
+    background-image: url('../../../img/svg/mark.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    width: 33px;
+    height: 26px;
+  }
+
+  &::before {
+    top: -13px;
+    left: 24px;
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    bottom: -13px;
+    right: 24px;
+  }
+
+  &__text {
+    font-family: 'NeverMindDemiBold';
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+
+  &__author {
+    align-self: flex-end;
+    font-style: normal;
+    margin-top: 8px;
+    opacity: 0.7;
+  }
+}

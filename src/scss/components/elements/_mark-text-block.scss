@@ -1,0 +1,23 @@
+.mark-text-block {
+  padding-left: 24px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--accent-color);
+  }
+
+  &__text {
+    font-family: 'NeverMindDemiBold';
+    line-height: 1.4;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}
