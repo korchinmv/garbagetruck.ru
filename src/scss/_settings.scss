@@ -34,6 +34,10 @@ img {
   vertical-align: middle;
 }
 
+blockquote {
+  margin: 0;
+}
+
 p {
   margin: 0;
 }
@@ -93,6 +97,12 @@ ul {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
+
+  &--none {
+    @media screen and (width <= 576px) {
+      padding: 0;
+    }
+  }
 }
 
 .state {

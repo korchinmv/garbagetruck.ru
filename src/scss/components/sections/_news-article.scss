@@ -2,11 +2,34 @@
   background-color: var(--bg-grey-color);
   padding: 41px 0 79px 0;
 
+  @media screen and (width <= 991px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  @media screen and (width <= 576px) {
+    background-color: var(--white-color);
+    padding: 0;
+  }
+
   &__breadcrumbs {
     margin-bottom: 54px;
 
     @media screen and (width <= 1024px) {
       margin-bottom: 40px;
+    }
+
+    @media screen and (width <= 576px) {
+      padding-top: 48px;
+    }
+  }
+
+  &__wrapper {
+    padding-bottom: 16px;
+
+    @media screen and (width <= 576px) {
+      background-color: var(--bg-grey-color);
+      padding-bottom: 28px;
     }
   }
 
@@ -21,18 +44,40 @@
 
   &__content {
     margin-bottom: 80px;
+
+    @media screen and (width <= 1024px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (width <= 576px) {
+      margin-bottom: 0;
+    }
   }
 
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
+    font-size: 16px;
   }
 
   &__bot {
     background-color: var(--white-color);
     padding: 40px 224px 80px 224px;
+
+    @media screen and (width <= 1024px) {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    @media screen and (width <= 768px) {
+      padding: 23px 30px 64px 30px;
+    }
+
+    @media screen and (width <= 576px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__date {
@@ -46,10 +91,20 @@
 
   &__socials {
     text-transform: uppercase;
+
+    span {
+      @media screen and (width <= 576px) {
+        display: none;
+      }
+    }
   }
 
   &__img {
     width: 100%;
+
+    @media screen and (width <= 377px) {
+      height: 211px;
+    }
   }
 
   &__subtitle {
@@ -60,32 +115,79 @@
     line-height: 1.4;
     margin-bottom: 8px;
 
+    @media screen and (width <= 576px) {
+      font-size: 16px;
+    }
+
     &--margin {
       margin-bottom: 40px;
+
+      @media screen and (width <= 576px) {
+        margin-bottom: 32px;
+      }
     }
   }
 
-  &__slides {
-    margin-bottom: 8px;
+  &__blockquote {
+    display: inline-block;
+    margin-bottom: 53px;
+
+    @media screen and (width <= 576px) {
+      margin-bottom: 27px;
+    }
   }
 
-  &__blockquote,
   &__mark-text,
   &__slider {
     margin-bottom: 40px;
+
+    @media screen and (width <= 576px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__slider {
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__slider-wrapper {
+    position: relative;
+    margin-bottom: 8px;
+
+    @media screen and (width <= 768px) {
+      width: 90%;
+    }
+
+    @media screen and (width <= 576px) {
+      margin-bottom: 4px;
+    }
   }
 
   .swiper-news-article-thumbs {
-    height: 80px;
-    width: 442px;
+    max-width: 442px;
+    width: 100%;
 
     .swiper-slide {
       cursor: pointer;
       opacity: 0.5;
-      width: 142px;
+
+      img {
+        height: 80px;
+        max-width: 142px;
+        width: 100%;
+
+        @media screen and (width <= 576px) {
+          height: 62px;
+        }
+      }
     }
 
-    .swiper-slide-active {
+    .swiper-slide-thumb-active {
       opacity: 1;
     }
   }
@@ -93,22 +195,55 @@
   .swiper-button-next,
   .swiper-button-prev {
     color: var(--black-color);
-    opacity: 0.7;
+    top: 50%;
 
-    // &:hover {
-    //   &::after {
-    //     color: var(--accent-color);
-    //   }
-    // }
+    &:hover {
+      &::after {
+        color: var(--accent-color);
+      }
+    }
 
     &::after {
       font-size: 24px;
       font-weight: bold;
       opacity: 0.7;
+      transition: color 0.3s;
+
+      @media screen and (width <= 768px) {
+        font-size: 16px;
+      }
     }
   }
 
-  // .swiper-button-prev {
-  //   left: -50px;
-  // }
+  .swiper-button-prev {
+    left: -40px;
+
+    @media screen and (width <= 768px) {
+      left: -30px;
+    }
+  }
+
+  .swiper-button-next {
+    right: -40px;
+
+    @media screen and (width <= 768px) {
+      right: -30px;
+    }
+  }
+
+  &__news {
+    @media screen and (width <= 576px) {
+      padding: 48px 0;
+    }
+  }
+
+  &__details {
+    justify-content: center;
+    margin-top: 32px;
+    display: none !important;
+
+    @media screen and (width <= 768px) {
+      display: flex !important;
+    }
+  }
 }

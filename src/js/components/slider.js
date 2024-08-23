@@ -1,7 +1,7 @@
 // Подключение свайпера
 import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
-Swiper.use([Navigation, Pagination]);
+import { Navigation, Pagination, Thumbs } from "swiper/modules";
+Swiper.use([Navigation, Pagination, Thumbs]);
 
 const heroSwiper = new Swiper(".hero__slider", {
   loop: true,
@@ -118,19 +118,32 @@ const clientsMobileSwiper = new Swiper(".clients__slider-mobile", {
   },
 });
 
+//Слайдер на страницы статьи новости
 const newsArticleSwiperThumbs = new Swiper(".swiper-news-article-thumbs", {
-  spaceBetween: 8,
-  // loop: true,
+  spaceBetween: 4,
   slidesPerView: 3,
+  loop: true,
   // centeredSlides: true,
-  slideToClickedSlide: true,
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      spaceBetween: 8,
+    },
+  },
 });
 
 const newsArticleSwiper = new Swiper(".swiper-news-article", {
-  spaceBetween: 8,
+  spaceBetween: 4,
+  loop: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-news-article-next",
+    prevEl: ".swiper-news-article-prev",
+  },
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      spaceBetween: 8,
+    },
   },
   thumbs: {
     swiper: newsArticleSwiperThumbs,

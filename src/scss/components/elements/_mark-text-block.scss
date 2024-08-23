@@ -2,6 +2,11 @@
   padding-left: 24px;
   position: relative;
 
+  @media screen and (width <= 576px) {
+    font-size: 16px;
+    padding-left: 16px;
+  }
+
   &::before {
     content: '';
     position: absolute;
