@@ -39,21 +39,17 @@
       overflow: -moz-scrollbars-none;
       -ms-overflow-style: none;
       -webkit-overflow-scrolling: touch;
+
+      &::-webkit-scrollbar {
+        display: none; /*Safari and Chrome*/
+      }
     }
 
     .tabs__nav-item {
       flex: 0 0 auto;
     }
 
-    .tabs__nav::-webkit-scrollbar {
-      display: none; /*Safari and Chrome*/
-    }
-
     @media screen and (width <= 768px) {
-      .tabs__head {
-        padding-bottom: 16px;
-      }
-
       .tabs__nav-btn {
         font-size: 18px;
       }

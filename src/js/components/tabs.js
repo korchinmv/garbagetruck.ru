@@ -1,18 +1,17 @@
-const tabs = document.querySelectorAll(".tabs__nav-btn");
+const tabs = document.querySelectorAll(".tabs__nav-item");
 const contents = document.querySelectorAll(".tabs__panel");
 const underline = document.querySelector(".tabs__underline");
 
 function updateUnderline() {
-  const activeTab = document.querySelector(".tabs__nav-btn--active");
+  const activeTab = document.querySelector(".tabs__nav-item--active");
   underline.style.width = `${activeTab.offsetWidth}px`;
   underline.style.left = `${activeTab.offsetLeft}px`;
-  console.log(underline.style.left);
 }
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
-    tabs.forEach((t) => t.classList.remove("tabs__nav-btn--active"));
-    tab.classList.add("tabs__nav-btn--active");
+    tabs.forEach((t) => t.classList.remove("tabs__nav-item--active"));
+    tab.classList.add("tabs__nav-item--active");
 
     const target = tab.getAttribute("data-target");
 
