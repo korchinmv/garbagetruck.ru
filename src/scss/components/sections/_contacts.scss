@@ -1,0 +1,56 @@
+.contacts {
+  padding-top: 41px;
+  padding-bottom: 0;
+
+  @media screen and (width <= 768px) {
+    padding-top: 22px;
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 54px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 48px;
+
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__tabs {
+    .tabs__nav {
+      width: 3000px;
+      overflow-x: visible;
+      overflow: -moz-scrollbars-none;
+      -ms-overflow-style: none;
+    }
+
+    .tabs__nav::-webkit-scrollbar {
+      display: none; /*Safari and Chrome*/
+    }
+
+    @media screen and (width <= 768px) {
+      .tabs__head {
+        padding-bottom: 16px;
+      }
+
+      .tabs__nav-btn {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -23,10 +23,6 @@
 // Реализация бургер-меню
 // import { burger } from './functions/burger';
 
-// Реализация табов
-// import GraphTabs from 'graph-tabs';
-// const tabs = new GraphTabs('tab');
-
 // Подключение плагина кастом-скролла
 // import 'simplebar';
 
