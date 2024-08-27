@@ -9,3 +9,4 @@ import "./components/popup.js";
 import "./components/select-menu.js";
 import "./components/list-type.js";
 import "./components/tabs.js";
+import "./components/accordion.js";

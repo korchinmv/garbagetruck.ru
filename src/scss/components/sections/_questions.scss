@@ -1,4 +1,8 @@
 .questions {
+  &--grey {
+    background-color: var(--bg-grey-color);
+  }
+
   &__wrapper {
     position: relative;
     display: flex;
