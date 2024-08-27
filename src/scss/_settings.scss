@@ -93,6 +93,22 @@ ul {
   clip: rect(0 0 0 0);
 }
 
+.text {
+  line-height: 1.4;
+
+  &--margin {
+    margin-bottom: 32px;
+
+    @media screen and (width <= 576px) {
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (width <= 576px) {
+    font-size: 16px;
+  }
+}
+
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);

@@ -4,8 +4,11 @@ const underline = document.querySelector(".tabs__underline");
 
 function updateUnderline() {
   const activeTab = document.querySelector(".tabs__nav-item--active");
-  underline.style.width = `${activeTab.offsetWidth}px`;
-  underline.style.left = `${activeTab.offsetLeft}px`;
+
+  if (underline) {
+    underline.style.width = `${activeTab.offsetWidth}px`;
+    underline.style.left = `${activeTab.offsetLeft}px`;
+  }
 }
 
 tabs.forEach((tab) => {
