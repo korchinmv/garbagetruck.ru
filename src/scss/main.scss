@@ -17,6 +17,9 @@
 @import './components/sections/clients';
 @import './components/sections/questions';
 @import './components/sections/manufacturers';
+@import './components/sections/popular-questions';
+@import './components/sections/description';
+@import './components/sections/recommendations';
 @import './components/pages/news';
 @import './components/pages/news-article';
 @import './components/pages/contacts';
@@ -33,12 +36,14 @@
 @import './components/ui/mobileMenu';
 @import './components/ui/popup';
 @import './components/ui/tabs';
+@import './components/ui/filter-btn';
 @import './components/ui/form';
 @import './components/ui/quantity-items';
 @import './components/ui/select-menu';
 @import './components/ui/list-type';
 @import './components/ui/pagination';
 @import './components/ui/breadcrumbs';
+@import './components/ui/accordion';
 @import './components/elements/socials';
 @import './components/elements/feedback-block';
 @import './components/elements/blockquote';

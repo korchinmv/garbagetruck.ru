@@ -4,6 +4,10 @@
   max-width: 416px;
   background-color: var(--white-color);
 
+  &--grey {
+    background-color: var(--bg-grey-color);
+  }
+
   @media screen and (width <= 630px) {
     max-width: 100%;
   }
@@ -37,6 +41,7 @@
 
   &__img {
     margin-bottom: 16px;
+    height: 186px;
     width: 100%;
   }
 

@@ -1,0 +1,71 @@
+.accordion {
+  &__item {
+    background-color: var(--white-color);
+    padding: 24px;
+
+    @media screen and (width <= 576px) {
+      padding: 16px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &.open {
+      .accordion__btn {
+        margin-bottom: 24px;
+
+        @media screen and (width <= 576px) {
+          margin-bottom: 16px;
+        }
+      }
+
+      .accordion__arrow {
+        transform: rotate(-90deg);
+
+        path {
+          stroke: var(--accent-color);
+        }
+      }
+
+      .accordion__content {
+        overflow: visible;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'OswaldSemiBold';
+    text-transform: uppercase;
+    width: 100%;
+    transition: margin-bottom 0.3s;
+
+    @media screen and (width <= 576px) {
+      font-size: 18px;
+    }
+  }
+
+  &__arrow {
+    transform: rotate(90deg);
+    transition: all 0.3s;
+  }
+
+  &__content {
+    font-size: 16px;
+    opacity: 0.6;
+    max-width: 100%;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+      overflow 0.3s,
+      opacity 0.4s,
+      max-height 0.3s ease-out;
+  }
+}

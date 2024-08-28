@@ -180,3 +180,32 @@ const partnersPageSwiper = new Swiper(".partners__slider", {
     },
   },
 });
+
+const recommendationsSwiper = new Swiper(".recommendations__slider", {
+  slidesPerView: 1,
+  spaceBetween: 32,
+  loop: true,
+  navigation: {
+    nextEl: ".recommendations__slider-controls-next",
+    prevEl: ".recommendations__slider-controls-prev",
+  },
+  pagination: {
+    el: ".recommendations__pagination",
+    dynamicBullets: true,
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 32,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 22,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+  },
+});

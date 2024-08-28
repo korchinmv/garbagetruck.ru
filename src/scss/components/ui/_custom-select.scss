@@ -1,9 +1,9 @@
 .custom-select {
+  color: rgba($color: #3a3a3a, $alpha: 0.6);
   position: relative;
   display: flex;
   align-items: center;
   overflow: hidden;
-  color: rgba($color: #3a3a3a, $alpha: 0.6);
 
   &:hover {
     &::after {
@@ -31,11 +31,44 @@
   &__select {
     cursor: pointer;
     appearance: none;
-    display: none;
+    display: block;
     outline: 0;
     border: 0;
     box-shadow: none;
     color: inherit;
     background: none;
+  }
+
+  &--sort {
+    display: block;
+    outline: transparent;
+    border: 1px solid var(--accent-color);
+    padding: 12px 32px 12px 16px;
+    color: var(--black-color);
+    opacity: 1;
+    font-size: 16px;
+    height: 43px;
+
+    &:hover {
+      &::after {
+        transform: translateY(0);
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      display: block;
+      width: 12px;
+      height: 8px;
+      background-image: url('../../../img/arrow-select.svg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translateY(-25%);
+      transition: 0.25s all ease;
+    }
   }
 }
