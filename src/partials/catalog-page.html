@@ -153,7 +153,71 @@
     </ul>
 
     <div class="catalog__wrapper catalog__wrapper--decor">
-      <div class="catalog__filter"></div>
+      <div class="catalog__filter">
+        <div class="filter">
+          <h4 class="filter__title">Фильтр</h4>
+
+          <form class="filter__form" action="#">
+            <div class="filter__range">
+              <span class="filter__name">Грузоподъемность, т</span>
+              <div class="filter__inputs">
+                <input class="filter__input" type="text" placeholder="1">
+                <span class="filter__dash">-</span>
+                <input class="filter__input" type="text" placeholder="20 000 000">
+              </div>
+
+              <div class="filter__range"></div>
+            </div>
+
+            <div class="filter__checks">
+              <span class="filter__name">Колесная формула</span>
+
+              <div class="filter__checkbox-wrap">
+                <label class="filter__label custom-checkbox">
+                  <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                    data-validate-field="checkbox">
+                  <span class="custom-checkbox__span"></span>
+                </label>
+
+                <span class="filter__checkbox-name">4×2</span>
+              </div>
+
+              <div class="filter__checkbox-wrap">
+                <label class="filter__label custom-checkbox">
+                  <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                    data-validate-field="checkbox">
+                  <span class="custom-checkbox__span"></span>
+                </label>
+
+                <span class="filter__checkbox-name">6×4</span>
+              </div>
+
+              <div class="filter__checkbox-wrap">
+                <label class="filter__label custom-checkbox">
+                  <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                    data-validate-field="checkbox">
+                  <span class="custom-checkbox__span"></span>
+                </label>
+
+                <span class="filter__checkbox-name">6×6</span>
+              </div>
+
+              <div class="filter__checkbox-wrap">
+                <label class="filter__label custom-checkbox">
+                  <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                    data-validate-field="checkbox">
+                  <span class="custom-checkbox__span"></span>
+                </label>
+
+                <span class="filter__checkbox-name">8×4</span>
+              </div>
+            </div>
+
+            <button class="filter__add">Применить</button>
+            <button class="filter__remove">Сбросить</button>
+          </form>
+        </div>
+      </div>
 
       <div class="catalog__products">
         <div class="catalog__products-head">

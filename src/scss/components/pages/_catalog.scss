@@ -137,7 +137,8 @@
   }
 
   &__filter {
-    width: 304px;
+    max-width: 304px;
+    width: 100%;
     margin-right: 32px;
 
     @media screen and (width <= 1100px) {
