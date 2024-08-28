@@ -6,13 +6,20 @@
   }
 
   &__list {
-    display: flex;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 
   &__item {
     color: var(--black-light-color);
     opacity: 0.7;
     position: relative;
+    flex-shrink: 0;
 
     &:not(:last-child) {
       padding-right: 14px;
