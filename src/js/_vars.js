@@ -19,6 +19,13 @@ const buttonList = document?.querySelector(".btn-list");
 const buttonGrid = document?.querySelector(".btn-grid");
 const newsList = document?.querySelector(".news-page__list");
 const newsCards = document?.querySelectorAll(".news-card");
+const filterRangeSlider = document?.getElementById("filter-range");
+const inputFirst = document?.getElementById("filter-input-first");
+const inputSecond = document?.getElementById("filter-input-second");
+const openFilterBtn = document?.querySelector(".filter-btn");
+const filterElement = document?.querySelector(".catalog__filter");
+const closeFilterBtn = document?.querySelector(".catalog__close-btn");
+const inputs = [inputFirst, inputSecond];
 
 export {
   menuSearch,
@@ -42,4 +49,11 @@ export {
   buttonGrid,
   newsList,
   newsCards,
+  filterRangeSlider,
+  inputFirst,
+  inputSecond,
+  inputs,
+  openFilterBtn,
+  filterElement,
+  closeFilterBtn,
 };

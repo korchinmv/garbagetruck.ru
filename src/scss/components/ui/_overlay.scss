@@ -3,6 +3,7 @@
 
   &::before {
     content: '';
+    cursor: pointer;
     position: fixed;
     inset: 0;
     z-index: 2;
@@ -14,7 +15,6 @@
     transition:
       opacity 0.4s,
       visibility 0.4s ease-in-out;
-    cursor: pointer;
   }
 
   &--visible {
