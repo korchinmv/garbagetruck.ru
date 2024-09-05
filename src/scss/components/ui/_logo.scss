@@ -17,11 +17,12 @@
 
   &--right-line {
     position: relative;
+    padding-right: 20px;
 
     &::after {
       content: '';
       position: absolute;
-      right: -13px;
+      right: 0;
       top: 50%;
       display: block;
       width: 2px;
